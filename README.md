@@ -59,4 +59,4 @@ command = "$HOME/dev/tooling/uwu-herder/hop.sh"
 
 ## Why these choices
 
-Planning trail, decisions and dead ends: [.scratch/uwu-keymap/map.md](.scratch/uwu-keymap/map.md). Borrows the Talk / Hop / Confirm idea from [3-key Claude](https://constdecimalserrno.dev/3kc/), without the app.
+Borrows the Talk / Hop / Confirm idea from [3-key Claude](https://constdecimalserrno.dev/3kc/).
