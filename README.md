@@ -22,7 +22,8 @@ The top row is analog: Return sits deep so a brushed key can't approve a permiss
 1. **Blocked** agents first (sitting at a permission prompt or a question), then **done** (finished and not yet looked at).
 2. Newest state change first.
 3. Skips the agent you're already on.
-4. Nothing waiting → just raises iTerm.
+4. Sends ctrl+end to the pane (Claude Code's scroll-to-bottom key) so a backlog of output doesn't leave you staring at "Jump to bottom".
+5. Nothing waiting → just raises iTerm.
 
 It works across all workspaces and tabs. It runs inside iTerm only; macOS Shortcuts.app will record the UwU's F13 but never fires on it, so a global trigger needs a third-party hotkey tool.
 
@@ -59,4 +60,4 @@ command = "$HOME/dev/tooling/uwu-herder/hop.sh"
 
 ## Why these choices
 
-Borrows the Talk / Hop / Confirm idea from [3-key Claude](https://constdecimalserrno.dev/3kc/).
+Planning trail, decisions and dead ends: [.scratch/uwu-keymap/map.md](.scratch/uwu-keymap/map.md). Borrows the Talk / Hop / Confirm idea from [3-key Claude](https://constdecimalserrno.dev/3kc/), without the app.
