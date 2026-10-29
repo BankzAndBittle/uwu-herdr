@@ -9,5 +9,10 @@ pick() {
 }
 [ "$1" = --pick ] && { pick; exit; }
 target=$("$h" agent list | pick)
-[ -n "$target" ] && "$h" agent focus "$target" >/dev/null
+[ -n "$target" ] && {
+  "$h" agent focus "$target" >/dev/null
+  # ctrl+end = Claude Code's scroll:bottom. The "Jump to bottom" viewport is Claude Code's own, so herdr's
+  # pane.scroll can't reach it, and herdr send-keys doesn't know `end`, so send the raw escape sequence.
+  "$h" pane send-text "$target" "$(printf '\033[1;5F')" >/dev/null
+}
 open -a iTerm
